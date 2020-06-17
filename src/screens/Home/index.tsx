@@ -7,15 +7,18 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { AuthActions } from '../../redux/auth/actions'
 
+import { teste } from '../../services/firebase'
+
 export const Home: React.FC = () => {
   const dispatch = useDispatch()
   // const { navigate } = useNavigation()
-  function goToDetails() {
+  const alo = useSelector((state) => state.auth)
+
+  async function goToDetails() {
     // navigate('details')
     dispatch(AuthActions.loginSuccess('111111', 'glaucinho'))
+    await teste({ achei: 'analytics limpo, ai sim' })
   }
-  // const alo = useSelector(informationRetrieveState)
-  const alo = useSelector((state) => state.auth)
   return (
     <View>
       <Text>Aqui é a home</Text>
