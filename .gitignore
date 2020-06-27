@@ -14,5 +14,6 @@ web-report/
 .DS_Store
 
 
-# firebaseconfig
-google-services.json
+# key analytcs
+amplitudeKey.ts
+

@@ -7,4 +7,4 @@
 - Redux - gerenciador de estado global da aplicação e arquitetura flux
 - Redux-saga - gerenciador de ações assincronas do redux
 - axios - biblioteca para requisições http
-- firebase analytics - ferramenta do google para obtermos metricas de uso dos usuarios e utilizarmos para insides
+- expo-analytics-amplitude - para analycts de eventos

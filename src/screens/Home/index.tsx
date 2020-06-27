@@ -7,7 +7,6 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import { AuthActions } from '../../redux/auth/actions'
 
-import { teste } from '../../services/firebase'
 import { testandoAmpli } from '../../services/amplitude-analytics'
 
 export const Home: React.FC = () => {
@@ -17,9 +16,9 @@ export const Home: React.FC = () => {
 
   function goToDetails() {
     // navigate('details')
-    dispatch(AuthActions.loginSuccess('111111', 'glaucinho'))
-    // await teste({ achei: 'analytics limpo, ai sim' })
-    testandoAmpli()
+    // dispatch(AuthActions.loginSuccess('111111', 'glaucinho'))
+    // testandoAmpli()
+
   }
   return (
     <View>
